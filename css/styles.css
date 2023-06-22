@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.img__logo {
+    width: 200px;
+}
+
+/* =========HEADER======= */
+
+header {
+    color: black;
+    padding: 0.5rem;
+    height: 80px;
+}
+
+header form {
+    display: none;
+}
+
+header nav li {
+    list-style: none;
+}
+
+header nav li a {
+    text-decoration: none;
+}
+
+/* ========= BARRA DE NAVEGACION ============= */
+
+li a{
+    color: black;
+    font-weight: bold;
+}
+
+
+ul{
+display: flex;
+grid-auto-flow: column;
+gap: 1em;
+}
+
+.nav__label, .nav__input{
+    display: none;
+}
+
+.menu li{
+    --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%)
+}
+
+.menu li::after{
+    content: "";
+    display: block;
+    background-color: black;
+    width: 90%;
+    margin-top: 3px;
+    height: 3px;
+    clip-path: var(--clippy);
+    transition: clip-path .3s;
+}
+
+.menu li:hover{
+    --clippy:polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+nav {
+    display: flex;
+    height: 100%;
+    width: 90%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/*========= MAIN CARRUSEL =========*/
+
+
+
+.carousel-inner{
+    max-height: 400px;
+}
+
+.card-title{
+    text-align: center;
+}
+
+p{
+    text-align: center;
+}
+
+.boton__tarjeta1{
+    justify-content: center;
+}
+
+.card-img-top{
+object-fit: contain;
+height: 300px;
+}
+
+.division__carrusel{
+    padding-top: 50px;
+}
+
+.row row-cols-1 row-cols-md-3 g-4{
+    max-width: 85%;
+}
+
+/*========== FOOTER ========*/
+
+footer {
+    background-color: black;
+    color: white;
+    background-size: 100% 80px;
+    padding: 30px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.espacio {
+    margin: 350px;
+}
+
+.mapa {
+    width: 100%;
+    height: 300px;
+    padding-bottom: 50px;
+}
+
+.redes-sociales {
+    justify-content: space-between;
+
+
+
+
+}
+
+.dos {
+    justify-content: space-between;
+
+
+
+}
+
+.tres {
+    justify-content: space-between;
+
+
+
+}
+
+
+
+@media (max-width: 780px){
+    .nav__label{
+        display: block;
+        cursor: pointer;
+    }
+
+    .menu{
+        position: fixed;
+        top: 80px;
+        bottom: 0;
+        background-color: orange;
+        width: 100%;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        clip-path: circle(0% at center);
+        transition: clip-path 1s ease-in-out;
+    }
+
+    .menu__lista{
+        display: table;
+        
+    }
+
+   .nav__input:checked + .menu{
+        clip-path: circle(100% at center);
+    }
+
+    #carouselExample{
+        max-height: 20px;
+        max-width: 80%;
+    }
+
+    footer{
+        display: none;
+    }
+
+    .card{
+        padding-top: 2rem;
+    }
+
+    .card-title{
+        text-align: center;
+    }
+
+    p{
+        text-align: center;
+    }
+
+
+    /*========== FOOTER ========*/
+
+footer {
+    background-color: black;
+    display: inline;
+    color: black;
+    object-fit: cover;
+    align-items: center;
+
+}
+
+}
+
+
+
