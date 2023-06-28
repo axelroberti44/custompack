@@ -121,6 +121,15 @@ footer ul {
     width: 100%;
 }
 
+/*  ============== SECCION SUSTENTABILIDAD ======================= */
+
+.texto-quienes-somos{
+    margin-top: 100px;
+    text-decoration: black solid;
+    font-weight: bold;
+    font-size: 20px;
+}
+
 
 @media (max-width: 780px) {
     footer {
