@@ -1,0 +1,93 @@
+/*========== FOOTER ========*/
+  
+footer {
+    background-color: #333;
+    color: #fff;
+  
+    /* margin-top: 2rem; */
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    height: 200px;
+    gap: 10px;
+    position: relative;
+    align-items: center;
+  
+    .footer-content {
+      grid-column: 1 / -1;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 15px;
+    }
+  
+    .footer-divider {
+      border-right: 2px solid white;
+      height: 150px;
+      margin: 0 10px;
+    }
+  
+    p {
+      margin: 0;
+    }
+  
+    ul {
+      list-style: none;
+      justify-content: center;
+    }
+  
+    li {
+      text-decoration: none;
+      color: white;
+      text-align: center;
+    }
+  
+    h5 {
+      align-items: center;
+      text-align: center;
+      margin-top: 1rem;
+    }
+  
+    .redes-sociales {
+      grid-column: 1/2;
+      grid-row: 1/2;
+    }
+  
+    .formulario-footer {
+      grid-column: 5/6;
+      grid-row: 1/2;
+      align-items: top;
+    }
+  
+    .sobre-nosotros-footer {
+      grid-column: 3/4;
+      grid-row: 1/2;
+    }
+  
+    .contacto-footer {
+      grid-column: 2/3;
+      grid-row: 1/2;
+    }
+  
+    .centered-list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      list-style: none;
+      padding: 0;
+    }
+  
+    .formulario-footer form {
+      width: 400px;
+    }
+  
+    .formulario-footer-caja {
+      justify-content: center;
+    }
+  
+    .derechos-reservados {
+      width: 100%;
+      grid-column: 1/5;
+      grid-row: 2/3;
+      border-top: white;
+    }
+  }
