@@ -1,0 +1,32 @@
+.descartables-banner-index {
+    width: 100%;
+    height: 200px;
+  }
+  
+  
+  iframe {
+    width: 100%;
+    height: 300px;
+  }
+  
+  .seccion-index__2 {
+    margin-top: 2rem;
+  }
+
+  @media (max-width: 970px) {
+    .formulario-footer {
+      display: none;
+    }
+  }
+
+  @media (max-width: 768px) {
+
+    .card-img {
+      object-fit: contain;
+    }
+  
+    .tarjetas {
+      justify-content: center;
+      gap: 20px;
+    }
+}

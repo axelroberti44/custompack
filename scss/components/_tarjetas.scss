@@ -1,5 +1,6 @@
 .card-img {
     height: 310px;
+    object-fit: cover;
   }
   
   .tarjetas {
@@ -8,7 +9,7 @@
   
   .tarjetas-productos {
     gap: 20px 0;
-    height: 20px;
+    min-height: 200px;
   }
   
   .card {
@@ -23,3 +24,12 @@
   .card-compact {
     height: 100px;
   }
+
+  .tx-title {
+min-height: 4vw;
+  }
+
+  .tarjeta-ensaladera {
+height: 20rem;
+width: 40rem;
+}

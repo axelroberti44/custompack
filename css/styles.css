@@ -14,6 +14,7 @@ body {
 
 body {
   background-color: rgb(239, 239, 239);
+  font-family: "Montserrat", sans-serif;
 }
 
 header li {
@@ -57,17 +58,11 @@ header li {
   margin-top: 20px;
 }
 
-button {
-  background-color: black;
-}
-
 .descartables-banner-index {
   width: 100%;
   height: 200px;
-  object-fit: contain;
 }
 
-/*  ============================ SECCION 2 INDEX ========================= */
 iframe {
   width: 100%;
   height: 300px;
@@ -77,8 +72,23 @@ iframe {
   margin-top: 2rem;
 }
 
+@media (max-width: 970px) {
+  .formulario-footer {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .card-img {
+    object-fit: contain;
+  }
+  .tarjetas {
+    justify-content: center;
+    gap: 20px;
+  }
+}
 .card-img {
   height: 310px;
+  object-fit: cover;
 }
 
 .tarjetas {
@@ -87,7 +97,7 @@ iframe {
 
 .tarjetas-productos {
   gap: 20px 0;
-  height: 20px;
+  min-height: 200px;
 }
 
 .card {
@@ -103,7 +113,15 @@ iframe {
   height: 100px;
 }
 
-/*========== FOOTER ========*/
+.tx-title {
+  min-height: 4vw;
+}
+
+.tarjeta-ensaladera {
+  height: 20rem;
+  width: 40rem;
+}
+
 footer {
   background-color: #333;
   color: #fff;
@@ -180,7 +198,6 @@ footer .derechos-reservados {
   border-top: white;
 }
 
-/* ============SECCION PRODUCTOS================ */
 .productos-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -190,29 +207,6 @@ footer .derechos-reservados {
   position: relative;
 }
 
-.img-sustentabilidad {
-  width: 100%;
-}
-
-.formulario-contacto {
-  margin-top: 6rem;
-}
-
-.texto-sustentabilidad {
-  font-weight: bolder;
-  font-family: "Times New Roman", Times, serif;
-  font-size: 40px;
-  text-align: center;
-}
-
-.texto-quienes-somos {
-  margin-top: 100px;
-  text-decoration: black solid;
-  font-weight: bold;
-  font-size: 20px;
-}
-
-/*  ============== SECCION QUIENES SOMOS ======================= */
 @media (max-width: 970px) {
   .formulario-footer {
     display: none;
@@ -222,7 +216,6 @@ footer .derechos-reservados {
   .productos-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    /* grid-template-rows: 1fr 1fr; */
     gap: 2rem;
     margin: 2rem;
     position: relative;
@@ -232,14 +225,6 @@ footer .derechos-reservados {
   }
   .formulario-seccion-productos {
     display: none;
-  }
-  footer {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    height: 200px;
-    gap: 10px;
-    position: relative;
-    align-items: center;
   }
 }
 @media (min-width: 768px) and (max-width: 866px) {
@@ -253,28 +238,8 @@ footer .derechos-reservados {
   .formulario-seccion-productos {
     display: none;
   }
-  footer {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    height: 200px;
-    gap: 10px;
-    position: relative;
-    align-items: center;
-  }
 }
 @media (max-width: 768px) {
-  .tarjeta {
-    /* width: 387px; */
-    justify-content: center;
-    /* margin: 20px 0; */
-  }
-  .card-img {
-    object-fit: contain;
-  }
-  .tarjetas {
-    justify-content: center;
-    gap: 20px;
-  }
   .productos-grid {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -282,6 +247,8 @@ footer .derechos-reservados {
     margin: 2rem;
     position: relative;
   }
+}
+@media (max-width: 768px) {
   .formulario-footer {
     display: none;
   }
@@ -309,8 +276,63 @@ footer .derechos-reservados {
   footer .formulario-footer {
     display: none;
   }
-  footer #carouselExampleSlidesOnly {
-    max-height: 200px;
+}
+.img-sustentabilidad {
+  width: 100%;
+}
+
+@media (max-width: 970px) {
+  .formulario-footer {
+    display: none;
+  }
+}
+@media (min-width: 866px) and (max-width: 1200px) {
+  footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 200px;
+    gap: 10px;
+    position: relative;
+    align-items: center;
+  }
+}
+@media (min-width: 768px) and (max-width: 866px) {
+  footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 200px;
+    gap: 10px;
+    position: relative;
+    align-items: center;
+  }
+}
+@media (max-width: 768px) {
+  .formulario-footer {
+    display: none;
+  }
+  footer {
+    text-decoration: none;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    height: 500px;
+  }
+  footer ul {
+    padding: 0;
+    margin: 10px 0;
+    list-style: none;
+  }
+  footer li {
+    margin-bottom: 5px;
+  }
+  footer .footer-divider {
+    border-right: none;
+  }
+  footer .formulario-footer {
+    display: none;
   }
   footer .texto-sustentabilidad {
     font-weight: bolder;
@@ -318,6 +340,60 @@ footer .derechos-reservados {
     font-size: 20px;
     text-align: center;
   }
+}
+.formulario-contacto {
+  margin-top: 6rem;
+}
+
+.texto-sustentabilidad {
+  font-weight: bolder;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 40px;
+  text-align: center;
+}
+
+.texto-quienes-somos {
+  margin-top: 100px;
+  text-decoration: black solid;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.texto-producto-ensaladera {
+  font-weight: bolder;
+}
+
+@media (max-width: 915px) {
+  .texto-sustentabilidad {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 915px) {
+  .texto-sustentabilidad {
+    font-size: 35px;
+  }
+}
+.boton-tarjeta-index {
+  background-color: #ff4800;
+  width: 150px;
+  transition: background-color 0.3s ease;
+  font-weight: bolder;
+}
+
+.boton-tarjeta-index:hover {
+  background-color: rgb(56, 56, 56);
+}
+
+.boton-tarjeta-producto {
+  background-color: #ff4800;
+  width: 150px;
+  transition: background-color 0.3s ease;
+  font-weight: bolder;
+  color: white;
+}
+
+.boton-tarjeta-producto:hover {
+  background-color: rgb(56, 56, 56);
 }
 
 /*# sourceMappingURL=styles.css.map */

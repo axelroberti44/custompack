@@ -11,3 +11,19 @@
     font-weight: bold;
     font-size: 20px;
   }
+
+  .texto-producto-ensaladera {
+    font-weight: bolder;
+  }
+
+  @media (max-width: 915px) {
+   .texto-sustentabilidad {
+    font-size: 1.5rem;
+   } 
+  }
+
+  @media (min-width: 915px) {
+    .texto-sustentabilidad {
+     font-size: 35px;
+    } 
+   }

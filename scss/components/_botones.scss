@@ -1,0 +1,22 @@
+.boton-tarjeta-index {
+    background-color: $naranja; 
+    width: 150px;
+    transition: background-color 0.3s ease;
+    font-weight: bolder;
+  }
+  
+  .boton-tarjeta-index:hover {
+    background-color: $gris;
+  }
+
+  .boton-tarjeta-producto {
+    background-color: $naranja; 
+    width: 150px;
+    transition: background-color 0.3s ease;
+    font-weight: bolder;
+    color: white;
+  }
+
+  .boton-tarjeta-producto:hover {
+    background-color: $gris;
+  }

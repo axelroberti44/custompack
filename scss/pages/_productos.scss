@@ -1,0 +1,94 @@
+.productos-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2rem;
+    margin: 2rem;
+    position: relative;
+}
+
+@media (max-width: 970px) {
+    .formulario-footer {
+        display: none;
+    }
+}
+
+
+@media (min-width: 866px) and (max-width:1200px) {
+    .productos-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        margin: 2rem;
+        position: relative;
+    }
+
+    .producto-oculto-responsive {
+        display: none;
+    }
+
+    .formulario-seccion-productos {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 866px) {
+    .productos-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        margin: 2rem;
+        position: relative;
+    }
+
+    .formulario-seccion-productos {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .productos-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+        margin: 2rem;
+        position: relative;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .formulario-footer {
+        display: none;
+    }
+
+    footer {
+        text-decoration: none;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+        height: 500px;
+
+        & ul {
+            padding: 0;
+            margin: 10px 0;
+            list-style: none;
+        }
+
+        & li {
+            margin-bottom: 5px;
+        }
+
+        .footer-divider {
+            border-right: none;
+        }
+
+        .formulario-footer {
+            display: none;
+        }
+    }
+}
